@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let number = parseInt(prompt("Give me a number"))
+
+        let tablero = "";
+
+        for(let i = 0; i < number; i++){
+            for(let j = 0; j < number; j++){
+                if(i % 2 === 0){
+                    if(j % 2 == 0){
+                        tablero += "O";
+                    } else {
+                        tablero += "X";
+                    }
+                } else {
+                    if(j % 2 == 0){
+                        tablero += "X";
+                    } else {
+                        tablero += "O";
+                    }
+                }
+            }
+            tablero+= "\n";
+        }
+
+        console.log(tablero)
+
+    </script>
+</body>
+
+</html>
