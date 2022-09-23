@@ -24,6 +24,43 @@
         * 9	2
         * 10 1
         */
+
+        numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        let posición0 = numbers[0];
+        let posición1 = numbers[1];
+        let posición2 = numbers[2];
+        let posición3 = numbers[3];
+        let posición4 = numbers[4];
+        let posición5 = numbers[5];
+        let posición6 = numbers[6];
+        let posición7 = numbers[7];
+        let posición8 = numbers[8];
+        let posición9 = numbers[9];
+        let posición10 = numbers[10];
+        for (i = 0; i < numbers.length; i++){
+            number = parseInt(prompt("Introduce a value from 0 to 10"));
+            if (number < 0){
+                console.log(posición0 + " " + numbers[0]);
+                console.log(posición1 + " " + numbers[1]);
+                console.log(posición2 + " " + numbers[2]);
+                console.log(posición3 + " " + numbers[3]);
+                console.log(posición4 + " " + numbers[4]);
+                console.log(posición5 + " " + numbers[5]);
+                console.log(posición6 + " " + numbers[6]);
+                console.log(posición7 + " " + numbers[7]);
+                console.log(posición8 + " " + numbers[8]);
+                console.log(posición9 + " " + numbers[9]);
+                console.log(posición10 + " " + numbers[10]);
+            } 
+            else if (number <= 10){
+               numbers [number] += number;
+               console.log (number)
+            }
+            else{
+                console.log("The number introduced is incorrect.");
+            }
+        }
+
     </script>
 </body>
 
